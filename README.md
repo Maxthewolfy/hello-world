@@ -9,5 +9,5 @@ I might upload some of my random project in here in the future (if i still inter
 
 Upadte 21/10/21
   Adding "The Rando Number Game.py"
-  "The Rando Number Game"
+  
   At first I was making a random number generator code but it's kinda get boring real quick so I added some spice to it such as yes/no promt and name promt (also assign specific     name as an easter egg), it might not be that much, programming-wise (also a lot messy with all those IF-ELSEs). but it's very rewarding for a beginner like me.
