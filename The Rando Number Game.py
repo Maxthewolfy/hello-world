@@ -178,4 +178,6 @@ while nomo == False:
     play()
 if start == True:
     Notplay()
+else:
+    pass
 Bye()
