@@ -15,7 +15,7 @@ def Asking():
             nomo = False
             start = False
             break
-        if yay == "Nay":
+        elif yay == "Nay":
             nomo = True
             start = True
             break
@@ -32,11 +32,24 @@ def Function():
         print("Result:", rando)
         time.sleep(1.5)
         print("UwU it's ",rando, " better luck next time.")
-    if rando >= 6:
+    elif rando >= 6:
         print("Result:", rando)
         time.sleep(1.5)
         print("OwO it's ",rando, "! can we get an ice cream?")
-    if  rando == 10:
+    if rando == 0 and name == "Maxxy":
+        time.sleep(1.5)
+        print("Shhhh..")
+        time.sleep(1.5)
+        print("there there, don't cry now")
+        time.sleep(0.5)
+        print("Here")
+        time.sleep(1)
+        print("https://www.models-resource.com/resources/big_icons/23/22613.png")
+        time.sleep(5)
+        print('a lil something to "cheer" you up~')
+        time.sleep(2)
+        print("i bet ya gonna luv it ;3")
+    elif  rando == 10:
         time.sleep(2)
         print("But wait, there's more!")
         if name == "Maxxy":
@@ -51,25 +64,9 @@ def Function():
             time.sleep(1)
             print("me")
         else:
-            time.sleep(0.1)
-    if rando == 0 and name == "Maxxy":
-        print("Result:", rando)
-        time.sleep(1.5)
-        print("UwU it's ",rando, " better luck next time.")
-        time.sleep(2)
-        print("Shhhh..")
-        time.sleep(1.5)
-        print("there there, don't cry now")
-        time.sleep(0.5)
-        print("Here")
-        time.sleep(1)
-        print("https://www.models-resource.com/resources/big_icons/23/22613.png")
-        time.sleep(5)
-        print('a lil something to "cheer" you up~')
-        time.sleep(2)
-        print("i bet ya gonna luv it ;3")
+            pass
     else:
-        time.sleep(0.1)
+        pass
 
     time.sleep(1)
     print("it took",time.process_time(),"ms to process.")
@@ -97,7 +94,7 @@ def play():
             again = input("Yay or Nay? ")
             if again == "Yay":
                 break
-            if again == "Nay":
+            elif again == "Nay":
                 Notplay()
                 break
             else:
@@ -119,7 +116,7 @@ def Notplay():
        if again == "Yay":
            nomo = False
            play()
-       if again == "Nay":
+       elif again == "Nay":
            nomo = True
            break
        else:
@@ -127,6 +124,7 @@ def Notplay():
            print("uhhh.. what was that again?")
            time.sleep(0.5)
 
+            
 #Closing the program
 def Bye():
     print("See ya around", name, ":3")
