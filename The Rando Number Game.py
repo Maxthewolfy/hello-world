@@ -177,7 +177,7 @@ while True:
     if inp > 0:
         print("So...")
         time.sleep(1)
-        print("Your name are numbers, huh?")
+        print("Your name is made out of numbers, huh?")
         while True:
             enter = input("")
             try:
