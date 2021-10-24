@@ -5,6 +5,7 @@ import sys
 nomo = bool
 start = bool
 
+#Asking user if they want to start a program or not
 def Asking():
     global nomo
     global start
@@ -23,6 +24,8 @@ def Asking():
             print("uhhh.. what was that again?")
             time.sleep(0.5)
 
+#Number Randomizer
+#Maxxy is an Easter Egg word, enter through Line 161's input
 def Function():
     rando = random.randint(0, 10)
     if rando <= 5:
@@ -71,6 +74,7 @@ def Function():
     time.sleep(1)
     print("it took",time.process_time(),"ms to process.")
 
+#Main playing part, calling number randomizer and ask user for a replay
 def play():
     while nomo == False:
         print("YAY! let's go!")
@@ -102,7 +106,7 @@ def play():
                 time.sleep(0.5)
                 
 
-
+#Asking if user want to continue playing or not
 def Notplay():
     print("it's okay", name ,"we can play again later :3")
     time.sleep(2)
@@ -123,7 +127,7 @@ def Notplay():
            print("uhhh.. what was that again?")
            time.sleep(0.5)
 
-
+#Closing the program
 def Bye():
     print("See ya around", name, ":3")
     if name == "Maxxy":
@@ -138,6 +142,7 @@ def Bye():
     time.sleep(2.5)
     sys.exit
 
+#Whole Procedure
 time.sleep(2)
 print("Hewwo! OwO")
 time.sleep(1.5)
