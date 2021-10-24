@@ -2,8 +2,11 @@ import random
 import time
 import sys
 
+
 nomo = bool
 start = bool
+inp = 0
+
 
 #Asking user if they want to start a program or not
 def Asking():
@@ -23,6 +26,7 @@ def Asking():
             time.sleep(1.5)
             print("uhhh.. what was that again?")
             time.sleep(0.5)
+
 
 #Number Randomizer
 #Maxxy is an Easter Egg word, enter through Line 161's input
@@ -70,6 +74,7 @@ def Function():
 
     time.sleep(1)
     print("it took",time.process_time(),"ms to process.")
+
 
 #Main playing part, calling number randomizer and ask user for a replay
 def play():
@@ -124,7 +129,7 @@ def Notplay():
            print("uhhh.. what was that again?")
            time.sleep(0.5)
 
-            
+
 #Closing the program
 def Bye():
     print("See ya around", name, ":3")
@@ -136,9 +141,10 @@ def Bye():
         time.sleep(1)
         print("kay?")
     else:
-        time.sleep(0.1)
+        pass
     time.sleep(2.5)
     sys.exit
+
 
 #Whole Procedure
 time.sleep(2)
@@ -156,8 +162,46 @@ print("WE GET FREE ICE CREAMS!")
 time.sleep(2.5)
 print("Before we get started!")
 time.sleep(2)
-name = input("How should I call you?: ")
-time.sleep(1.5)
+while True:
+    if inp == -1:
+        break
+    else:
+        pass
+    name = input("How should I call you?: ")
+    time.sleep(1.5)
+#Integers Detection
+    try:
+        inp = int(name)
+    except:
+        inp = -1
+    if inp > 0:
+        print("So...")
+        time.sleep(1)
+        print("Your name are numbers, huh?")
+        while True:
+            enter = input("")
+            try:
+                enter = int(enter)
+            except:
+                enter = -1
+            if enter < 0:
+                break
+            elif enter == 1:
+                print("I see, a fellow robot like me.")
+                print("however, no matter who you are")
+                print("We can all have fun together :)")
+                inp = -1
+                break
+            elif enter == 0:
+                time.sleep(1)
+                print("So who are you exactly?")
+                time.sleep(0.5)
+                break
+            elif enter > 1:
+                print("Sorry, I don't understand decimal")
+    else:
+        break
+time.sleep(0.7)
 print(name,"? That's a wonderful name you have!")
 time.sleep(1.5)
 if name == 'Maxxy':
